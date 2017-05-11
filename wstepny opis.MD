@@ -21,16 +21,23 @@ Klasa Plant i klasy dziedziczące - dziedziczy po klasie Organism, przy czym w k
 Lista zadań:
 
 Jacek Sudak:
+
 Klasa World 
+
 Funkcja automatycznego wykonywania kolejnych tur w określonych odstępach czasowych 
 
 
 Paweł Lipiński
+
 Klasa Organism    
+
 Klasa Animal, Plant i ich pochodne
 
 Mikołaj Król:
+
 Możliwość zapisu do pliku i wczytania z pliku stanu gry
+
 Możliwość odtworzenia stanu gry w zakresie ostatnich 5 tur
+
 
 WPF - jeszcze się okaże. W późniejszym pliku zamieścimy faktyczny podział.
