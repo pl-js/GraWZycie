@@ -1,35 +1,36 @@
-Tytu³ projektu: Gra w ¿ycie
-Autorzy: Miko³aj Król, Pawe³ Lipiñski, Jacek Sudak
+TytuÅ‚ projektu: Gra w Å¼ycie
 
-Celem projektu jest stworzenie prostego symulatora wirtualnego œwiata w postaci dwuwymiarowej tablicy o zadanych rozmiarach NxN. W œwiecie bêd¹ istnia³y proste formy ¿ycia o odmiennym zachowaniu. Ka¿dy z organizmów zajmuje dok³adnie jedno pole w tablicy, na ka¿dym polu mo¿e znajdowaæ siê co najwy¿ej jeden organizm (w przypadku kolizji jeden z nich usuniêty lub przesuniêty). Symulator ma bêdzie mia³ turowy. W ka¿dej turze wszystkie organizmy istniej¹ce na œwiecie wykonuj¹ akcjê odpowiedni¹ dla swojej klasy. Czêœæ z nich bêdzie siê porusza³a (zwierzêta), czêœæ bêdzie nieruchoma (roœliny). W przypadku kolizji (jeden z organizmów znajdzie siê na tym samym polu, co inny) jeden z organizmów zwyciê¿a, zabijaj¹c konkurenta. Kolejnoœæ ruchów organizmów w turze zale¿y od inicjatywy. Pierwsze ruszaj¹ siê zwierzêta posiadaj¹ce najwy¿sz¹ inicjatywê. Jeœli dwa organizmy maj¹ tak¹ sam¹ inicjatywê, o tym, który wykona akcjê najpierw decyduje wiek organizmu (starszy wykona akcjê pierwszy). Zwyciêstwo przy spotkaniu zale¿y od si³y organizmu, ale dla poszczególnych organizmów byæ mo¿e bêd¹ zaimplementowane metody, które sprawi¹, ¿e bêdzie inaczej. Przy równej sile zwyciê¿a organizm, który zaatakowa³. Przy uruchomieniu programu na planszy pojawi siê po kilka sztuk zwierz¹t i roœlin. W oknie programu bêd¹ wypisywane informacje z wykonanej tury - kto zjad³ kogo, jaki organizm uciek³ przed walk¹ itd.
+Autorzy: MikoÅ‚aj KrÃ³l, PaweÅ‚ LipiÅ„ski, Jacek Sudak
+
+Celem projektu jest stworzenie prostego symulatora wirtualnego Å›wiata w postaci dwuwymiarowej tablicy o zadanych rozmiarach NxN. W Å›wiecie bÄ™dÄ… istniaÅ‚y proste formy Å¼ycia o odmiennym zachowaniu. KaÅ¼dy z organizmÃ³w zajmuje dokÅ‚adnie jedno pole w tablicy, na kaÅ¼dym polu moÅ¼e znajdowaÄ‡ siÄ™ co najwyÅ¼ej jeden organizm (w przypadku kolizji jeden z nich usuniÄ™ty lub przesuniÄ™ty). Symulator ma bÄ™dzie miaÅ‚ turowy. W kaÅ¼dej turze wszystkie organizmy istniejÄ…ce na Å›wiecie wykonujÄ… akcjÄ™ odpowiedniÄ… dla swojej klasy. CzÄ™Å›Ä‡ z nich bÄ™dzie siÄ™ poruszaÅ‚a (zwierzÄ™ta), czÄ™Å›Ä‡ bÄ™dzie nieruchoma (roÅ›liny). W przypadku kolizji (jeden z organizmÃ³w znajdzie siÄ™ na tym samym polu, co inny) jeden z organizmÃ³w zwyciÄ™Å¼a, zabijajÄ…c konkurenta. KolejnoÅ›Ä‡ ruchÃ³w organizmÃ³w w turze zaleÅ¼y od inicjatywy. Pierwsze ruszajÄ… siÄ™ zwierzÄ™ta posiadajÄ…ce najwyÅ¼szÄ… inicjatywÄ™. JeÅ›li dwa organizmy majÄ… takÄ… samÄ… inicjatywÄ™, o tym, ktÃ³ry wykona akcjÄ™ najpierw decyduje wiek organizmu (starszy wykona akcjÄ™ pierwszy). ZwyciÄ™stwo przy spotkaniu zaleÅ¼y od siÅ‚y organizmu, ale dla poszczegÃ³lnych organizmÃ³w byÄ‡ moÅ¼e bÄ™dÄ… zaimplementowane metody, ktÃ³re sprawiÄ…, Å¼e bÄ™dzie inaczej. Przy rÃ³wnej sile zwyciÄ™Å¼a organizm, ktÃ³ry zaatakowaÅ‚. Przy uruchomieniu programu na planszy pojawi siÄ™ po kilka sztuk zwierzÄ…t i roÅ›lin. W oknie programu bÄ™dÄ… wypisywane informacje z wykonanej tury - kto zjadÅ‚ kogo, jaki organizm uciekÅ‚ przed walkÄ… itd.
 
 
 
 Opis podstawowych klas:
 
-Klasa World - bêdzie stanowi³a ogóln¹ ramê programu - to w niej bêd¹ siê zawiera³y podstawowe metody programu takie jak “MakeATurn”, “InicialiseTheWorld” oraz metody pomocnicze, np. “GetNearbyEmptyLocation”.
+Klasa World - bÄ™dzie stanowiÅ‚a ogÃ³lnÄ… ramÄ™ programu - to w niej bÄ™dÄ… siÄ™ zawieraÅ‚y podstawowe metody programu takie jak â€œMakeATurnâ€, â€œInicialiseTheWorldâ€ oraz metody pomocnicze, np. â€œGetNearbyEmptyLocationâ€.
 
-Klasa Organism - podstawowa klasa abstrakcyjna,  od której dziedziczyæ bêd¹ zwierzêta i roœliny. Zawiera takie pola jak “CoordX”, “CoordY”, “Age”, “Initiative”, “Strength”. Wymuszaæ bêdzie wykorzystanie metody “Action”, “Collision ”, “Reproduction” itd.
+Klasa Organism - podstawowa klasa abstrakcyjna,  od ktÃ³rej dziedziczyÄ‡ bÄ™dÄ… zwierzÄ™ta i roÅ›liny. Zawiera takie pola jak â€œCoordXâ€, â€œCoordYâ€, â€œAgeâ€, â€œInitiativeâ€, â€œStrengthâ€. WymuszaÄ‡ bÄ™dzie wykorzystanie metody â€œActionâ€, â€œCollision â€, â€œReproductionâ€ itd.
 
-Klasa Animal i klasy dziedzicz¹ce - dziedziczy po klasie Organism, przy czym w klasie Action obiekty tej klasy wykonuj¹ ruchy po planszy. 
+Klasa Animal i klasy dziedziczÄ…ce - dziedziczy po klasie Organism, przy czym w klasie Action obiekty tej klasy wykonujÄ… ruchy po planszy. 
 
-Klasa Plant i klasy dziedzicz¹ce - dziedziczy po klasie Organism, przy czym w klasie Action obiekty tej klasy pozostaj¹ na swoich miejscach, za to z pewnym prawdopodobieñstwem sukcesu dokonuj¹ reprodukcji - rozsiewaj¹ siê. 
+Klasa Plant i klasy dziedziczÄ…ce - dziedziczy po klasie Organism, przy czym w klasie Action obiekty tej klasy pozostajÄ… na swoich miejscach, za to z pewnym prawdopodobieÅ„stwem sukcesu dokonujÄ… reprodukcji - rozsiewajÄ… siÄ™. 
 
 
 
-Lista zadañ:
+Lista zadaÅ„:
 
 Jacek Sudak:
 Klasa World 
-Funkcja automatycznego wykonywania kolejnych tur w okreœlonych odstêpach czasowych 
+Funkcja automatycznego wykonywania kolejnych tur w okreÅ›lonych odstÄ™pach czasowych 
 
 
-Pawe³ Lipiñski
+PaweÅ‚ LipiÅ„ski
 Klasa Organism    
 Klasa Animal, Plant i ich pochodne
 
-Miko³aj Król:
-Mo¿liwoœæ zapisu do pliku i wczytania z pliku stanu gry
-Mo¿liwoœæ odtworzenia stanu gry w zakresie ostatnich 5 tur
+MikoÅ‚aj KrÃ³l:
+MoÅ¼liwoÅ›Ä‡ zapisu do pliku i wczytania z pliku stanu gry
+MoÅ¼liwoÅ›Ä‡ odtworzenia stanu gry w zakresie ostatnich 5 tur
 
-WPF - jeszcze siê oka¿e. W póŸniejszym pliku zamieœcimy faktyczny podzia³.
+WPF - jeszcze siÄ™ okaÅ¼e. W pÃ³Åºniejszym pliku zamieÅ›cimy faktyczny podziaÅ‚.
