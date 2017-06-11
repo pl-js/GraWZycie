@@ -30,3 +30,7 @@ Mikołaj Król: Możliwość zapisu do pliku i wczytania z pliku stanu gry, Moż
 
 
 WPF - jeszcze się okaże. W późniejszym pliku zamieścimy faktyczny podział.
+
+
+Edit 11.06.2017:
+Zgodnie z zaleceniami prowadzących rozszerzymy projekt aplikacji o dodatkową klasę Area. Klasa ta reprezentować będzie pola, typu np: pustynia, łąka, las, bagno, jezioro. Będą one wpływały na organizmy na nich się znajdujące lub na organizmy przyległe, np. tymczasowo modyfikując ich siłę czy inicjatywę lub szanse rozmnożenia (w przypadku klasy Plant). Dodatkowo niektóre z tych pól będą się cyklicznie, co określoną liczbe rund, zmieniać w inne pole specjalne, np: bagno zmienia się w jezioro, itp.
