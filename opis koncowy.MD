@@ -1,204 +1,219 @@
 
 
-Tytu³ projektu: Gra w ¿ycie
+TytuÅ‚ projektu: Gra w Å¼ycie
 
-Autorzy: Miko³aj Król, Pawe³ Lipiñski, Jacek Sudak
+Autorzy: MikoÅ‚aj KrÃ³l, PaweÅ‚ LipiÅ„ski, Jacek Sudak
 
 
 
 Temat:
 
-Tematem projektu jest stworzenie prostego symulatora wirtualnego œwiata w postaci dwuwymiarowej tablicy o zadanych rozmiarach NxN. W œwiecie istniej¹ proste formy ¿ycia o odmiennym zachowaniu. Ka¿dy z organizmów zajmuje dok³adnie jedno pole w tablicy, na ka¿dym polu mo¿e znajdowaæ siê co najwy¿ej jeden organizm (w przypadku kolizji jeden z nich usuniêty lub przesuniêty). Symulator ma turowy charakter. W ka¿dej turze wszystkie organizmy istniej¹ce na œwiecie wykonuj¹ akcjê odpowiedni¹ dla swojej klasy. Czêœæ z nich bêdzie siê porusza³a (zwierzêta), czêœæ bêdzie nieruchoma (roœliny). W przypadku kolizji (jeden z organizmów znajdzie siê na tym samym polu, co inny) jeden z organizmów zwyciê¿a, zabijaj¹c konkurenta. Kolejnoœæ ruchów organizmów w turze zale¿y od inicjatywy. Pierwsze ruszaj¹ siê zwierzêta posiadaj¹ce najwy¿sz¹ inicjatywê. Jeœli dwa organizmy maj¹ tak¹ sam¹ inicjatywê, o tym, który wykona akcjê najpierw decyduje wiek organizmu (starszy wykona akcjê pierwszy). Zwyciêstwo przy spotkaniu zale¿y od si³y organizmu. Przy równej sile zwyciê¿a organizm, który zaatakowa³. Po uruchomieniu programu na planszy pojawia siê po kilka sztuk zwierz¹t i roœlin. W oknie programu wypisywane s¹ informacje z wykonanej tury - kto zjad³ kogo, jaki organizm uciek³ przed walk¹ itd. Dodatkowo ka¿de pole na planszy ma okreœlony rodzaj terenu reprezentowany przez klasê Area. w zale¿noœci od rodzaju terenu, statystyki oraz zachowania poszczególnych zwierz¹t mog¹ siê zmieniaæ.
-Dok³adny opis poszczególnych organizmów i obszarów podany jest poni¿ej, przy opisie poszczególnych klas.
+Tematem projektu jest stworzenie prostego symulatora wirtualnego Å›wiata w postaci dwuwymiarowej tablicy o zadanych rozmiarach NxN. W Å›wiecie istniejÄ… proste formy Å¼ycia o odmiennym zachowaniu. KaÅ¼dy z organizmÃ³w zajmuje dokÅ‚adnie jedno pole w tablicy, na kaÅ¼dym polu moÅ¼e znajdowaÄ‡ siÄ™ co najwyÅ¼ej jeden organizm (w przypadku kolizji jeden z nich usuniÄ™ty lub przesuniÄ™ty). Symulator ma turowy charakter. W kaÅ¼dej turze wszystkie organizmy istniejÄ…ce na Å›wiecie wykonujÄ… akcjÄ™ odpowiedniÄ… dla swojej klasy. CzÄ™Å›Ä‡ z nich bÄ™dzie siÄ™ poruszaÅ‚a (zwierzÄ™ta), czÄ™Å›Ä‡ bÄ™dzie nieruchoma (roÅ›liny). W przypadku kolizji (jeden z organizmÃ³w znajdzie siÄ™ na tym samym polu, co inny) jeden z organizmÃ³w zwyciÄ™Å¼a, zabijajÄ…c konkurenta. KolejnoÅ›Ä‡ ruchÃ³w organizmÃ³w w turze zaleÅ¼y od inicjatywy. Pierwsze ruszajÄ… siÄ™ zwierzÄ™ta posiadajÄ…ce najwyÅ¼szÄ… inicjatywÄ™. JeÅ›li dwa organizmy majÄ… takÄ… samÄ… inicjatywÄ™, o tym, ktÃ³ry wykona akcjÄ™ najpierw decyduje wiek organizmu (starszy wykona akcjÄ™ pierwszy). ZwyciÄ™stwo przy spotkaniu zaleÅ¼y od siÅ‚y organizmu. Przy rÃ³wnej sile zwyciÄ™Å¼a organizm, ktÃ³ry zaatakowaÅ‚. Po uruchomieniu programu na planszy pojawia siÄ™ po kilka sztuk zwierzÄ…t i roÅ›lin. W oknie programu wypisywane sÄ… informacje z wykonanej tury - kto zjadÅ‚ kogo, jaki organizm uciekÅ‚ przed walkÄ… itd. Dodatkowo kaÅ¼de pole na planszy ma okreÅ›lony rodzaj terenu reprezentowany przez klasÄ™ Area. w zaleÅ¼noÅ›ci od rodzaju terenu, statystyki oraz zachowania poszczegÃ³lnych zwierzÄ…t mogÄ… siÄ™ zmieniaÄ‡.
+DokÅ‚adny opis poszczegÃ³lnych organizmÃ³w i obszarÃ³w podany jest poniÅ¼ej, przy opisie poszczegÃ³lnych klas.
 
 
 
 Opis klas i metod w nich zawartych :
 
-Klasa MainWindow - g³owna klasa programu odpowiadaj¹ca za funkcjonowanie interfejsu i przetrzymuj¹ca obiekty klasy World, reprezentuj¹ce œwiaty gry (aktualny i te z poprzednich tur)
-        - private static int maxNumberOfPastTurns - iloœæ tur archiwalnych zachowywanych w pamiêci
-        - private static int pastTurnsMemorized - aktualna iloœæ zachowanych tur
-        - private static int turnsCounter - licznik tur
-        - private static World[] _worldBoards - tablica zawieraj¹ca wszystkie œwiaty
-        - public static Grid boardGrid - plansza
-        - public static string logInfo - treœæ logów
-        - public static int worldSize - rozmiar planszy
-        - public static TextBox logBox - okienko logów
-        - public static int previousTurns - iloœæ poprzednich tur
-        - public static bool automatic - u¿ywany przy autoamtycznym wykonywaniu tur w odstêpach czasowych
-        - public static DispatcherTimer dispatcherTimer - u¿ywany przy autoamtycznym wykonywaniu tur w odstêpach czasowych
-        - public static List<Label> labels 
-        - public static Brush buttonDefault - kolor przycisku, u¿ywany przy autoamtycznym wykonywaniu tur w odstêpach czasowych
-        - private string fileName - nazwa pliku zapisu
-        - private static bool stable - u¿ywany do sprawdzenia czy poprzednie zadanie zosta³o wykonane przed rozpoczêciem kolejnego
+Klasa MainWindow - gÅ‚Ã³wna klasa programu odpowiadajÄ…ca za funkcjonowanie interfejsu i przetrzymujÄ…ca obiekty klasy World, reprezentujÄ…ce Å›wiaty gry (aktualny i te z poprzednich tur)
 
+        - private static int maxNumberOfPastTurns - iloÅ›Ä‡ tur archiwalnych zachowywanych w pamiÄ™ci
+        - private static int pastTurnsMemorized - aktualna iloÅ›Ä‡ zachowanych tur
+        - private static int turnsCounter - licznik tur
+        - private static World[] _worldBoards - tablica zawierajÄ…ca wszystkie Å›wiaty
+        - public static Grid boardGrid - plansza
+        - public static string logInfo - treÅ›Ä‡ logÃ³w
+        - public static int worldSize - rozmiar planszy
+        - public static TextBox logBox - okienko logÃ³w
+        - public static int previousTurns - iloÅ›Ä‡ poprzednich tur
+        - public static bool automatic - uÅ¼ywany przy autoamtycznym wykonywaniu tur w odstÄ™pach czasowych
+        - public static DispatcherTimer dispatcherTimer - uÅ¼ywany przy autoamtycznym wykonywaniu tur w odstÄ™pach czasowych
+        - public static List<Label> labels 
+        - public static Brush buttonDefault - kolor przycisku, uÅ¼ywany przy autoamtycznym wykonywaniu tur w odstÄ™pach czasowych
+        - private string fileName - nazwa pliku zapisu
+        - private static bool stable - uÅ¼ywany do sprawdzenia czy poprzednie zadanie zostaÅ‚o wykonane przed rozpoczÄ™ciem kolejnego
+	
+	
 	Metody i konstruktory:
 	- public MainWindow() - konstruktor, tworzy nowe okno gry
-	- public async static void SerializeGame(string fileName) - metoda u¿ywana do serializacji gry - zapisu do pliku binarnego. W kolejnych pêtlach serializuje poszczególne œwiaty World, listy z OrganismBoard i AreaBoard tych œwiatów wraz z obiektami siê na nich znajduj¹cymi. Serializowane s¹ te¿ listy inicjatyw (np Init1Plants), w formie zapisania iloœci organizmów znajduj¹cych siê na danej liœcie, a nastêpnie zapisaniu ci¹gu lokalizacji tych organizmów.
-	- public async static void DeserializeGame(string fileName) - metoda u¿ywana do deserializacji gry - odczytu z pliku binarnego. Dzia³anie jest analogiczne do serializacji, w poszczególnych pêtlach wczytywane s¹ poszczególne elementy œwiatów World i zawieranych przez nie Organismów i Area.
-	- private static void NextTurn() - metoda wywo³uj¹ca now¹ turê. Najpierw czyszczona jest plansza i okienko logów z poprzedniego stanu, nastêpnie przepisywane s¹ obiekty World w tablicy z archiwalnymi œwiatami i generowana jest kopia aktualnego œwiata. Nastêpnie wywo³ywana jest metoda ExecuteTurn().
-	- private static void PreviousTurn(int round) - metoda wczytuj¹ca obiekt World z poprzedniej tury. Analogicznie do metody NextTurn() przepisywane s¹ na s¹siaduj¹ce miejsca obiekty World w tablicy i na jej koñcu dopisywany jest null.
-	- protected override void OnClosed(EventArgs e) - metoda opisuj¹ca co musi zostaæ wykonane po zamkniêciu g³ównego okna.
-	- public void drawBoard() - metoda rysuj¹ca planszê. 
-	- private void NowaTura_Click(object sender, RoutedEventArgs e) - metoda opisuj¹ca zachowanie programu po naciœniêciu przycisku Next Turn. Wywo³uje metodê NextRurn() lub je¿eli gra nie jest zainicjowana to wywóluje metodê NowaGra_Click()
-	- private void NowaGra_Click(object sender, RoutedEventArgs e) - metoda opisuj¹ca zachowanie programu po naciœniêciu przycisku New Game. Wywo³uje powstnie Window1 startWindow i metodê startWindow.Show().
-	- public void NewBoard() - metoda wywo³ywana przy tworzeniu nowej gry, odpowiedzialna za zainicjowanie nowego œwiata World i wywo³anie metody drawBoard().
-	- private void Button_Click(object sender, RoutedEventArgs e) - metoda opisuj¹ca zachowanie programu po naciœniêciu przycisku Previous Turn. Sprawdza czy istniej¹ zapisane poprzednie tury, je¿eli tak to wczytuje poprzedni¹ turê wywo³uj¹c metodê PreviousTurn().
-	- private async void Button_Click_1(object sender, RoutedEventArgs e) - metoda opisuj¹ca zachowanie programu po naciœniêciu przycisku Start/Stop Automatic Turns.
-	- private void dispatcherTimer_Tick(object sender, EventArgs e) - metoda odpowiedzialna za cykliczne wywo³ywanie metody NextTurn() w sta³ych odtêpach czasu.
-	- private void Legend_Click(object sender, RoutedEventArgs e) -  metoda opisuj¹ca zachowanie programu po naciœniêciu przycisku Legend. Wywo³uje okno Window2 zawieraj¹ce legende.
-	- private async void Button_Click_2(object sender, RoutedEventArgs e) - metoda opisuj¹ca zachowanie programu po naciœniêciu przycisku Save Game. Wywo³ywuje metode SerailizeGame().
-	- private async void Button_Click_3(object sender, RoutedEventArgs e) - metoda opisuj¹ca zachowanie programu po naciœniêciu przycisku Load Game. Wywo³ywuje metode DeserializeGame() i nastêpnie rysuje nowowczytany œwiat.
+	- public async static void SerializeGame(string fileName) - metoda uÅ¼ywana do serializacji gry - zapisu do pliku binarnego. W kolejnych pÄ™tlach serializuje poszczegÃ³lne Å›wiaty World, listy z OrganismBoard i AreaBoard tych Å›wiatÃ³w wraz z obiektami siÄ™ na nich znajdujÄ…cymi. Serializowane sÄ… teÅ¼ listy inicjatyw (np Init1Plants), w formie zapisania iloÅ›ci organizmÃ³w znajdujÄ…cych siÄ™ na danej liÅ›cie, a nastÄ™pnie zapisaniu ciÄ…gu lokalizacji tych organizmÃ³w.
+	- public async static void DeserializeGame(string fileName) - metoda uÅ¼ywana do deserializacji gry - odczytu z pliku binarnego. DziaÅ‚anie jest analogiczne do serializacji, w poszczegÃ³lnych pÄ™tlach wczytywane sÄ… poszczegÃ³lne elementy Å›wiatÃ³w World i zawieranych przez nie OrganismÃ³w i Area.
+	- private static void NextTurn() - metoda wywoÅ‚ujÄ…ca nowÄ… turÄ™. Najpierw czyszczona jest plansza i okienko logÃ³w z poprzedniego stanu, nastÄ™pnie przepisywane sÄ… obiekty World w tablicy z archiwalnymi Å›wiatami i generowana jest kopia aktualnego Å›wiata. NastÄ™pnie wywoÅ‚ywana jest metoda ExecuteTurn().
+	- private static void PreviousTurn(int round) - metoda wczytujÄ…ca obiekt World z poprzedniej tury. Analogicznie do metody NextTurn() przepisywane sÄ… na sÄ…siadujÄ…ce miejsca obiekty World w tablicy i na jej koÅ„cu dopisywany jest null.
+	- protected override void OnClosed(EventArgs e) - metoda opisujÄ…ca co musi zostaÄ‡ wykonane po zamkniÄ™ciu gÅ‚Ã³wnego okna.
+	- public void drawBoard() - metoda rysujÄ…ca planszÄ™. 
+	- private void NowaTura_Click(object sender, RoutedEventArgs e) - metoda opisujÄ…ca zachowanie programu po naciÅ›niÄ™ciu przycisku Next Turn. WywoÅ‚uje metodÄ™ NextRurn() lub jeÅ¼eli gra nie jest zainicjowana to wywÃ³luje metodÄ™ NowaGra_Click()
+	- private void NowaGra_Click(object sender, RoutedEventArgs e) - metoda opisujÄ…ca zachowanie programu po naciÅ›niÄ™ciu przycisku New Game. WywoÅ‚uje powstnie Window1 startWindow i metodÄ™ startWindow.Show().
+	- public void NewBoard() - metoda wywoÅ‚ywana przy tworzeniu nowej gry, odpowiedzialna za zainicjowanie nowego Å›wiata World i wywoÅ‚anie metody drawBoard().
+	- private void Button_Click(object sender, RoutedEventArgs e) - metoda opisujÄ…ca zachowanie programu po naciÅ›niÄ™ciu przycisku Previous Turn. Sprawdza czy istniejÄ… zapisane poprzednie tury, jeÅ¼eli tak to wczytuje poprzedniÄ… turÄ™ wywoÅ‚ujÄ…c metodÄ™ PreviousTurn().
+	- private async void Button_Click_1(object sender, RoutedEventArgs e) - metoda opisujÄ…ca zachowanie programu po naciÅ›niÄ™ciu przycisku Start/Stop Automatic Turns.
+	- private void dispatcherTimer_Tick(object sender, EventArgs e) - metoda odpowiedzialna za cykliczne wywoÅ‚ywanie metody NextTurn() w staÅ‚ych odtÄ™pach czasu.
+	- private void Legend_Click(object sender, RoutedEventArgs e) -  metoda opisujÄ…ca zachowanie programu po naciÅ›niÄ™ciu przycisku Legend. WywoÅ‚uje okno Window2 zawierajÄ…ce legende.
+	- private async void Button_Click_2(object sender, RoutedEventArgs e) - metoda opisujÄ…ca zachowanie programu po naciÅ›niÄ™ciu przycisku Save Game. WywoÅ‚ywuje metode SerailizeGame().
+	- private async void Button_Click_3(object sender, RoutedEventArgs e) - metoda opisujÄ…ca zachowanie programu po naciÅ›niÄ™ciu przycisku Load Game. WywoÅ‚ywuje metode DeserializeGame() i nastÄ™pnie rysuje nowowczytany Å›wiat.
 
 
 
-Klasa World - podstawowa klasa programu zawieraj¹ca wszystkie informacje o aktualnym stanie gry. Sk³ada siê z:
-	- int Size - rozmiar œwiata, tym samym boku planszy 
-	- static int DeathCounterLimit - (domyœlna wartoœæ 4) - okreœla ile tur Organism mo¿e spêdziæ na niebezpiecznym dla siebie terenie - dok³adny opis mechanizmu w klasie Area
-	- static int MaxEvolvesPerTurn - (obliczony jako Size*Size/10) - okreœla ile maksymalnie obiektów Area mo¿e siê zmieniæ na raz - dok³adny opis mechanizmu w klasie Area
-	- List<Organism> OrganismBoard - Lista tworz¹ca "planszê" na której znajduj¹ siê obiekty klasy Organism. Dziêki niej mo¿na zlokalizowaæ dany Organism w grze.
-	- List<Area> AreaBoard - Lista analogiczna do powy¿szej, ale zawieraj¹ca obiekty klasy Area.
-        - LinkedList<Organism> Init6Mice - Lista inicjatywy do której dodawane s¹ Organismy o danej inicjatywie - w tym przypadku zwierzê Mouse o inicjatywie 6. Dziêki tej liœcie mo¿na okreœliæ kolejnoœæ 	wykonywania ruchów przez organizmy w grze. Nowe Organismy o danej inicjatywie dopisywane s¹ do koñca listy.
-        - LinkedList<Organism> Init5Wolfs - Lista analogiczna do powy¿szej, zawieraj¹ca Organismy o inicjatywie 5 (Wolf).
-        - LinkedList<Organism> Init4SheepAndThornEaters - j.w. inicjatywa 4 (Sheep i ThornEater)
-        - LinkedList<Organism> Init3Snakes - j.w. inicjatywa 3 Snake)
-        - LinkedList<Organism> Init1Plants- j.w. inicjatywa 1 (wszystkie klasy roœlin - dziedzicz¹ce po Plant, np. Grass)
-        - LinkedList<Organism> Init4SheepAndThornEaters - j.w. inicjatywa 4 (Sheep i ThornEater)
-	- LinkedList<Organism> AddingList - lista u¿ywana do przetrzymywania œwie¿o utworzonych Organismów przed dodaniem ich do koñca listy inicjatyw.
-	- LinkedList<int> MaxDifferenceList - lista przetrzymuj¹ca lokalizacjê obiektów Area o najwy¿szej ró¿nicy wp³ywów - dok³adny opis mechanizmu w klasie Area.
-	- int TurnsFromLastEvolve - okreœla iloœæ tur od ostatniej ewolucji obszarów Area - dok³adny opis mechanizmu w klasie Area.
-	- int TurnsFromGeneratingMaxDiffList- okreœla iloœæ tur od utworzenia listy MaxDifferenceList - dok³adny opis mechanizmu w klasie Area.
+Klasa World - podstawowa klasa programu zawierajÄ…ca wszystkie informacje o aktualnym stanie gry. SkÅ‚ada siÄ™ z:
+
+	- int Size - rozmiar Å›wiata, tym samym boku planszy 
+	- static int DeathCounterLimit - (domyÅ›lna wartoÅ›Ä‡ 4) - okreÅ›la ile tur Organism moÅ¼e spÄ™dziÄ‡ na niebezpiecznym dla siebie terenie - dokÅ‚adny opis mechanizmu w klasie Area
+	- static int MaxEvolvesPerTurn - (obliczony jako Size*Size/10) - okreÅ›la ile maksymalnie obiektÃ³w Area moÅ¼e siÄ™ zmieniÄ‡ na raz - dokÅ‚adny opis mechanizmu w klasie Area
+	- List<Organism> OrganismBoard - Lista tworzÄ…ca "planszÄ™" na ktÃ³rej znajdujÄ… siÄ™ obiekty klasy Organism. DziÄ™ki niej moÅ¼na zlokalizowaÄ‡ dany Organism w grze.
+	- List<Area> AreaBoard - Lista analogiczna do powyÅ¼szej, ale zawierajÄ…ca obiekty klasy Area.
+	- LinkedList<Organism> Init6Mice - Lista inicjatywy do ktÃ³rej dodawane sÄ… Organismy o danej inicjatywie - w tym przypadku zwierzÄ™ Mouse o inicjatywie 6. DziÄ™ki tej liÅ›cie moÅ¼na okreÅ›liÄ‡ kolejnoÅ›Ä‡ 	wykonywania ruchÃ³w przez organizmy w grze. Nowe Organismy o danej inicjatywie dopisywane sÄ… do koÅ„ca listy.
+	- LinkedList<Organism> Init5Wolfs - Lista analogiczna do powyÅ¼szej, zawierajÄ…ca Organismy o inicjatywie 5 (Wolf).
+	- LinkedList<Organism> Init4SheepAndThornEaters - j.w. inicjatywa 4 (Sheep i ThornEater)
+	- LinkedList<Organism> Init3Snakes - j.w. inicjatywa 3 Snake)
+	- LinkedList<Organism> Init1Plants- j.w. inicjatywa 1 (wszystkie klasy roÅ›lin - dziedziczÄ…ce po Plant, np. Grass)
+	- LinkedList<Organism> Init4SheepAndThornEaters - j.w. inicjatywa 4 (Sheep i ThornEater)
+	- LinkedList<Organism> AddingList - lista uÅ¼ywana do przetrzymywania Å›wieÅ¼o utworzonych OrganismÃ³w przed dodaniem ich do koÅ„ca listy inicjatyw.
+	- LinkedList<int> MaxDifferenceList - lista przetrzymujÄ…ca lokalizacjÄ™ obiektÃ³w Area o najwyÅ¼szej rÃ³Å¼nicy wpÅ‚ywÃ³w - dokÅ‚adny opis mechanizmu w klasie Area.
+	- int TurnsFromLastEvolve - okreÅ›la iloÅ›Ä‡ tur od ostatniej ewolucji obszarÃ³w Area - dokÅ‚adny opis mechanizmu w klasie Area.
+	- int TurnsFromGeneratingMaxDiffList- okreÅ›la iloÅ›Ä‡ tur od utworzenia listy MaxDifferenceList - dokÅ‚adny opis mechanizmu w klasie Area.
 
 	Metody i konstruktory:
-	- public World(int size) - podstawowy konstrukor u¿ywany przy tworzeniu nowej gry, wywo³uje metodê InitializeWorld()
-	- public World(World oldWorld) - konstruktor kopiuj¹cy, tworzy dok³adn¹ kopiê instancji klasy World, ³¹cznie z utworzeniem kopii Organismów i Area. Iteruje po List<Organism> OrganismBoard tworz¹c kopiê Organismów, nastêpnie na podstawie list inicjatyw z kopiowanego obiektu World (np Init4SheepAndThornEaters) odtwarza listy nowotworzonego obiektu. U¿ywany do tworzenia historii ostatnich tur.
-	- public void ExecuteTurn() - metoda wykonuj¹ca jedn¹ turê w grze. Wywo³uje ona poszczególne metody sk³adaj¹ce siê na przebieg tury. 
-	- private void ExecuteActionForInitList(LinkedList<Organism> currentList) - metoda iteruj¹ca po danej liœcie inicjatyw currentList. Metoda sprawdza czy dany Organism nie zgin¹³ od czasu ostatnio wykonywanej akcji, je¿eli jest martwy (Alive==false) to usuwa go z listy, je¿eli jest ¿ywy to wykonujê metodê Action() oraz UpdateDeathCounter(). W przypadku gdy zostanie stworzony nowy Organism w trakcie metody Action(), jest on dodawany do listy AddingList. Po przejœciu ca³ej listy currentList nowe Organismy znajduj¹ce siê na AddingList s¹ dopisywane do koñca currentList. Lista AddingList jest czyszczona na pocz¹tku dzia³ania metody.
-	- private void EvolveAreaboard() - metoda dziêki której modyfikowany jest teren na planszy (obiekty Area). Metoda sprawdza ile tur minê³o od czasu ostatniej ewolucji terenu, je¿eli >2 to stara siê wykonaæ ewolucjê planszy. W tym celu najpierw sprawdza ile czasu minê³o od ostatniego wygenerowania MaxDifferenceList, je¿eli >8 to wywo³ujê metodê GenerateMaxDifferenceList(). Nastêpnie wykonujê ewolucje Area w iloœci MaxEvolvesPerTurn. W tym celu losujê lokalizacjê obiektu Area z listy MaxDifferenceList i wykonujê na tym obiekcie metodê Evolve() (opis w klasie Area). Je¿eli zabraknie obiektów na liœcie MaxDifferenceList to jest ona generowana od nowa.  
-	- private void GenerateMaxDifferenceList() - metoda generuj¹ca listê lokalizacji obiektów Area posiadaj¹cych najwiêksz¹ InfluenceDifference (opis w klasie Area). Najpierw iterujê po wszystkich obiektach Area znajduj¹cych siê w grze wywo³uj¹c metodê InfluenceDifference w celu znalezienia maksymalnej wartoœci MaxInfluenceDifference nastêpnie iteruje ponownie dodaj¹c takie obiekty do MaxDifferenceList.
-	- private void UpdateStrengthModifiers() - metoda iteruj¹ca po planszy - OrganismBoard, wywo³uj¹ca dla ka¿dego Oganismu metodê UpdateStrength() (opis w klasie Organism)
-	- private void CheckEnvironmentalDeaths() - metoda sprawdzaj¹ca dla ka¿dego Organismu na planszy, czy któryœ z Organismów nie przekroczy³ DeathCounterLimit, je¿eli tak siê sta³o, Organism ginie (Alive = false)
-	- private void InitializeWorld() - metoda inicjalizuj¹ca nowy obiekt klasy World, wykonujê ona poszczególne metody sk³adaj¹ce siê na tworzenie nowego œwiata
-	- private int GetPlantsAmount(int size) - metoda zwracaj¹ca iloœæ Organismów typu Plant jak¹ nale¿y wygenerowaæ w nowym œwiecie wed³ug wzoru toUpper(Size*Size/25)
-	- private int GetAnimalsAmount(int size) - metoda zwracaj¹ca iloœæ Organismów typu Animal i Thorn jak¹ nale¿y wygenerowaæ w nowym œwiecie wed³ug wzoru toUpper(Size*Size/15)
-	- private void InitializeOrganismBoard(int plantsAmount, int animalsAmount) - metoda tworz¹ca nowe obiekty poszczególnych klas w nowym œwiecie. Dla danej klasy (Wolf, Mouse, Grass...) tworzy ona okreœlon¹ przez GetPlantsAmount(int size) iloœæ obiektów i umieszcza je na planszy przy uzyciu AddToBoard, dodaj¹c je równie¿ do odpowiedniej listy inicjatyw (np. Init5Wolfs)
-	- private void InitializeAreaBoard() - metoda generuj¹ca i wstawiaj¹ce nowe obiekty Area na nowej plansze AreaBoard. Wykorzystywana podczas inicjalizacji nowej gry. Na pocz¹tku plansza wype³niana jest obiektami Area o tymczasowym type = -1. Nastêpnie w czterech losowych miejscach wstawiane s¹ po jednym obiekcie ka¿dego typu (opis typów w klasie Area). W momencie dodawania obiektu danego typu obiekty s¹siaduj¹ce typu -1 maj¹ modyfikowan¹ tablicê Influence metod¹ AddInfluence() i dodawane s¹ do listy InfluencedLocationsList[]. Istniej¹ cztery listy InfluencedLocationsList dla ka¿dego typu Area. Po wygenerowaniu losowo wybranych punktów pocz¹tkowych dla ka¿dego typu nastêpuje pêtla wype³niaj¹ca ca³¹ resztê planszy. Dodawane jest po kolei po jedynm obiekcie danego typu. W pêtli najpierw sprawdzane jest czy znajduj¹ siê obiekty na liœcie InfluencedLocationsList[], je¿eli tak to pobierany jest z niej losowy obiekt o maksymalnej wartoœci Influence poszukiwanego typu. Je¿eli nie to wybierana jest losowa wolna lokacja na AreaBoard (type = -1). Nastêpnie w wybrane miejsce wstawiane jest obiekt aktualnie wstawianego typu. Wybrana lokacja jest usuwana z InfluencedLocationsList[] wszystkich typow. Nastepnie do InfluencedLocationsList[] danego typu dodawni sa wszyscy sasiedzi wybranej lokacji o typie -1. Petla powtarza sie az do wypelnienia planszy. Taki przebieg algorytmu ma wymusic grupowanie sie obszarow konkretnych typow w wieksze grupy, jednoczesnie dopuszczajac mozliwosc powstawania wiekszej ilosci mniejszych grupek, gdy poprzednia grupka podczas generowania nie ma sie gdzie "rozrastac"
-	- public void PrintBoard() - metoda u¿ywana do rysowania planszy. Pêtle w metodzie przechodz¹ po ca³ej liœcie AreaBoard i OrganismBoard rysuj¹c odpowiednie t³o pola w zale¿noœci od Area i odpowiedni Organism jeœli taki siê na danym polu znajdujê.
-	- public int GenerateEmptyLocation() - metoda generuj¹ca dowoln¹ pust¹ lokalizacjê na planszy. Generuje losowe lokazilacje dopóki nie trafi takiej która nie jest pusta.
-	- public int GenerateNearbyEmptyLocation(int currentLocation) - metoda generuj¹ca losow¹ lokacjê wokó³ danej lokalizacji currentLocation. Wywo³uje metodê PotentialList(currentLocation), nastêpnie z uzyskanej listy odrzuca te lokalizacje które s¹ zajête. Je¿eli odrzuci wszystkei lokalizacje z listy, to zwraca -1, je¿eli na liœcie coœ zostanie, to zwraca losowy jej element.
-	- public int GenerateNearbyLocation(int currentLocation) - metoda generuj¹ca dowoln¹ lokalizacjê wokó³ zadanej lokalizacji currentLocation. Wywo³uje metodê PotentialList(currentLocation), nastêpnie zwraca losowy jej element.
+	- public World(int size) - podstawowy konstrukor uÅ¼ywany przy tworzeniu nowej gry, wywoÅ‚uje metodÄ™ InitializeWorld()
+	- public World(World oldWorld) - konstruktor kopiujÄ…cy, tworzy dokÅ‚adnÄ… kopiÄ™ instancji klasy World, Å‚Ä…cznie z utworzeniem kopii OrganismÃ³w i Area. Iteruje po List<Organism> OrganismBoard tworzÄ…c kopiÄ™ OrganismÃ³w, nastÄ™pnie na podstawie list inicjatyw z kopiowanego obiektu World (np Init4SheepAndThornEaters) odtwarza listy nowotworzonego obiektu. UÅ¼ywany do tworzenia historii ostatnich tur.
+	- public void ExecuteTurn() - metoda wykonujÄ…ca jednÄ… turÄ™ w grze. WywoÅ‚uje ona poszczegÃ³lne metody skÅ‚adajÄ…ce siÄ™ na przebieg tury. 
+	- private void ExecuteActionForInitList(LinkedList<Organism> currentList) - metoda iterujÄ…ca po danej liÅ›cie inicjatyw currentList. Metoda sprawdza czy dany Organism nie zginÄ…Å‚ od czasu ostatnio wykonywanej akcji, jeÅ¼eli jest martwy (Alive==false) to usuwa go z listy, jeÅ¼eli jest Å¼ywy to wykonujÄ™ metodÄ™ Action() oraz UpdateDeathCounter(). W przypadku gdy zostanie stworzony nowy Organism w trakcie metody Action(), jest on dodawany do listy AddingList. Po przejÅ›ciu caÅ‚ej listy currentList nowe Organismy znajdujÄ…ce siÄ™ na AddingList sÄ… dopisywane do koÅ„ca currentList. Lista AddingList jest czyszczona na poczÄ…tku dziaÅ‚ania metody.
+	- private void EvolveAreaboard() - metoda dziÄ™ki ktÃ³rej modyfikowany jest teren na planszy (obiekty Area). Metoda sprawdza ile tur minÄ™Å‚o od czasu ostatniej ewolucji terenu, jeÅ¼eli >2 to stara siÄ™ wykonaÄ‡ ewolucjÄ™ planszy. W tym celu najpierw sprawdza ile czasu minÄ™Å‚o od ostatniego wygenerowania MaxDifferenceList, jeÅ¼eli >8 to wywoÅ‚ujÄ™ metodÄ™ GenerateMaxDifferenceList(). NastÄ™pnie wykonujÄ™ ewolucje Area w iloÅ›ci MaxEvolvesPerTurn. W tym celu losujÄ™ lokalizacjÄ™ obiektu Area z listy MaxDifferenceList i wykonujÄ™ na tym obiekcie metodÄ™ Evolve() (opis w klasie Area). JeÅ¼eli zabraknie obiektÃ³w na liÅ›cie MaxDifferenceList to jest ona generowana od nowa.  
+	- private void GenerateMaxDifferenceList() - metoda generujÄ…ca listÄ™ lokalizacji obiektÃ³w Area posiadajÄ…cych najwiÄ™kszÄ… InfluenceDifference (opis w klasie Area). Najpierw iterujÄ™ po wszystkich obiektach Area znajdujÄ…cych siÄ™ w grze wywoÅ‚ujÄ…c metodÄ™ InfluenceDifference w celu znalezienia maksymalnej wartoÅ›ci MaxInfluenceDifference nastÄ™pnie iteruje ponownie dodajÄ…c takie obiekty do MaxDifferenceList.
+	- private void UpdateStrengthModifiers() - metoda iterujÄ…ca po planszy - OrganismBoard, wywoÅ‚ujÄ…ca dla kaÅ¼dego Oganismu metodÄ™ UpdateStrength() (opis w klasie Organism)
+	- private void CheckEnvironmentalDeaths() - metoda sprawdzajÄ…ca dla kaÅ¼dego Organismu na planszy, czy ktÃ³ryÅ› z OrganismÃ³w nie przekroczyÅ‚ DeathCounterLimit, jeÅ¼eli tak siÄ™ staÅ‚o, Organism ginie (Alive = false)
+	- private void InitializeWorld() - metoda inicjalizujÄ…ca nowy obiekt klasy World, wykonujÄ™ ona poszczegÃ³lne metody skÅ‚adajÄ…ce siÄ™ na tworzenie nowego Å›wiata
+	- private int GetPlantsAmount(int size) - metoda zwracajÄ…ca iloÅ›Ä‡ OrganismÃ³w typu Plant jakÄ… naleÅ¼y wygenerowaÄ‡ w nowym Å›wiecie wedÅ‚ug wzoru toUpper(Size*Size/25)
+	- private int GetAnimalsAmount(int size) - metoda zwracajÄ…ca iloÅ›Ä‡ OrganismÃ³w typu Animal i Thorn jakÄ… naleÅ¼y wygenerowaÄ‡ w nowym Å›wiecie wedÅ‚ug wzoru toUpper(Size*Size/15)
+	- private void InitializeOrganismBoard(int plantsAmount, int animalsAmount) - metoda tworzÄ…ca nowe obiekty poszczegÃ³lnych klas w nowym Å›wiecie. Dla danej klasy (Wolf, Mouse, Grass...) tworzy ona okreÅ›lonÄ… przez GetPlantsAmount(int size) iloÅ›Ä‡ obiektÃ³w i umieszcza je na planszy przy uzyciu AddToBoard, dodajÄ…c je rÃ³wnieÅ¼ do odpowiedniej listy inicjatyw (np. Init5Wolfs)
+	- private void InitializeAreaBoard() - metoda generujÄ…ca i wstawiajÄ…ce nowe obiekty Area na nowej plansze AreaBoard. Wykorzystywana podczas inicjalizacji nowej gry. Na poczÄ…tku plansza wypeÅ‚niana jest obiektami Area o tymczasowym type = -1. NastÄ™pnie w czterech losowych miejscach wstawiane sÄ… po jednym obiekcie kaÅ¼dego typu (opis typÃ³w w klasie Area). W momencie dodawania obiektu danego typu obiekty sÄ…siadujÄ…ce typu -1 majÄ… modyfikowanÄ… tablicÄ™ Influence metodÄ… AddInfluence() i dodawane sÄ… do listy InfluencedLocationsList[]. IstniejÄ… cztery listy InfluencedLocationsList dla kaÅ¼dego typu Area. Po wygenerowaniu losowo wybranych punktÃ³w poczÄ…tkowych dla kaÅ¼dego typu nastÄ™puje pÄ™tla wypeÅ‚niajÄ…ca caÅ‚Ä… resztÄ™ planszy. Dodawane jest po kolei po jedynm obiekcie danego typu. W pÄ™tli najpierw sprawdzane jest czy znajdujÄ… siÄ™ obiekty na liÅ›cie InfluencedLocationsList[], jeÅ¼eli tak to pobierany jest z niej losowy obiekt o maksymalnej wartoÅ›ci Influence poszukiwanego typu. JeÅ¼eli nie to wybierana jest losowa wolna lokacja na AreaBoard (type = -1). NastÄ™pnie w wybrane miejsce wstawiane jest obiekt aktualnie wstawianego typu. Wybrana lokacja jest usuwana z InfluencedLocationsList[] wszystkich typow. Nastepnie do InfluencedLocationsList[] danego typu dodawni sa wszyscy sasiedzi wybranej lokacji o typie -1. Petla powtarza sie az do wypelnienia planszy. Taki przebieg algorytmu ma wymusic grupowanie sie obszarow konkretnych typow w wieksze grupy, jednoczesnie dopuszczajac mozliwosc powstawania wiekszej ilosci mniejszych grupek, gdy poprzednia grupka podczas generowania nie ma sie gdzie "rozrastac"
+	- public void PrintBoard() - metoda uÅ¼ywana do rysowania planszy. PÄ™tle w metodzie przechodzÄ… po caÅ‚ej liÅ›cie AreaBoard i OrganismBoard rysujÄ…c odpowiednie tÅ‚o pola w zaleÅ¼noÅ›ci od Area i odpowiedni Organism jeÅ›li taki siÄ™ na danym polu znajdujÄ™.
+	- public int GenerateEmptyLocation() - metoda generujÄ…ca dowolnÄ… pustÄ… lokalizacjÄ™ na planszy. Generuje losowe lokazilacje dopÃ³ki nie trafi takiej ktÃ³ra nie jest pusta.
+	- public int GenerateNearbyEmptyLocation(int currentLocation) - metoda generujÄ…ca losowÄ… lokacjÄ™ wokÃ³Å‚ danej lokalizacji currentLocation. WywoÅ‚uje metodÄ™ PotentialList(currentLocation), nastÄ™pnie z uzyskanej listy odrzuca te lokalizacje ktÃ³re sÄ… zajÄ™te. JeÅ¼eli odrzuci wszystkei lokalizacje z listy, to zwraca -1, jeÅ¼eli na liÅ›cie coÅ› zostanie, to zwraca losowy jej element.
+	- public int GenerateNearbyLocation(int currentLocation) - metoda generujÄ…ca dowolnÄ… lokalizacjÄ™ wokÃ³Å‚ zadanej lokalizacji currentLocation. WywoÅ‚uje metodÄ™ PotentialList(currentLocation), nastÄ™pnie zwraca losowy jej element.
 	- private LinkedList<int> PotentialList(int currentLocation) - metoda generujaca liste lokacji sasiadujacych do lokacji currentLocation. Przy pomocy kilku warunkow brzegowych sprawdzajacych czy podana lokacja nie znajduje sie na skraju planszy zaweza ona ilosc generowanych wartosci. 
 	- public void AddToBoard(int location, Organism organism) - metoda wstawiajaca w podane miejsce na planszy location podany organism.
-	- public void NullToBoard(int location) - metoda wstawiajaca w podane miejsce na planszy location wartoœæ null.
+	- public void NullToBoard(int location) - metoda wstawiajaca w podane miejsce na planszy location wartoÅ›Ä‡ null.
 	- public World(SerializationInfo info, StreamingContext context) - konstruktor wykorzystywany przy deserializacji obiektu - wczytaniu gry z pliku binarnego.
 	- public void GetObjectData(SerializationInfo info, StreamingContext context) - metoda wykorzystywana do serializacji obiektu.
 
 
 
-Klasa Area - klasa opisuj¹ca rodzja pola znajduj¹cego siê w danym miejscu na planszy. G³ównym parametrem jest wartoœæ type okreœlaj¹ca rodzaj pola (0 - Polana, 1 - Pustynia, 2 - Bagno, 3 - Las). Rodzaj obszaru znajduj¹cy siê w danym miejscu planszy ma du¿e znaczenie na zachowanie niektórych obiektów klasy Organism.
-	- public int Type - okreœla typ danego obszaru Area
-	- public int[] Influence - tablica zawieraj¹ca cztery wartoœci odpowiadaj¹ce czterem rodzajom terenu, oznaczaj¹ce jaki wp³yw ma dany typ terenu na dany obiekt Area.
-	- public List<int> MaxInfluenceType - Lista zawieraj¹ca typy terenów które maj¹ najwy¿szy wp³yw na obiekt.
-	- public int InfluenceDifference - wartoœæ ró¿nicy miêdzy najwy¿szym wp³ywem z tablicy Influence[] i wartoœci¹ wp³ywu typu w³asciwego danemu obiektowi Area.
-	- private int MaxInfluenceValue - wartoœæ maksymalnego wp³ywa z tablicy Influence[].
+Klasa Area - klasa opisujÄ…ca rodzja pola znajdujÄ…cego siÄ™ w danym miejscu na planszy. GÅ‚Ã³wnym parametrem jest wartoÅ›Ä‡ type okreÅ›lajÄ…ca rodzaj pola (0 - Polana, 1 - Pustynia, 2 - Bagno, 3 - Las). Rodzaj obszaru znajdujÄ…cy siÄ™ w danym miejscu planszy ma duÅ¼e znaczenie na zachowanie niektÃ³rych obiektÃ³w klasy Organism.
+
+	- public int Type - okreÅ›la typ danego obszaru Area
+	- public int[] Influence - tablica zawierajÄ…ca cztery wartoÅ›ci odpowiadajÄ…ce czterem rodzajom terenu, oznaczajÄ…ce jaki wpÅ‚yw ma dany typ terenu na dany obiekt Area.
+	- public List<int> MaxInfluenceType - Lista zawierajÄ…ca typy terenÃ³w ktÃ³re majÄ… najwyÅ¼szy wpÅ‚yw na obiekt.
+	- public int InfluenceDifference - wartoÅ›Ä‡ rÃ³Å¼nicy miÄ™dzy najwyÅ¼szym wpÅ‚ywem z tablicy Influence[] i wartoÅ›ciÄ… wpÅ‚ywu typu wÅ‚asciwego danemu obiektowi Area.
+	- private int MaxInfluenceValue - wartoÅ›Ä‡ maksymalnego wpÅ‚ywa z tablicy Influence[].
 
 	Metody i konstruktory:
-	- public Area(int type) - konstruktor podstawowy tworz¹cy obiekt podanego typu.
-	- public Area(Area area) - konstruktor kopiuj¹cy.
-	- public Area GetCloned() - metoda zwracaj¹ca klon danego obiektu.
-	- public void CheckInfuence(World world, LinkedList<int> potentialList) - metoda sprawdzaj¹ca wp³yw s¹siaduj¹cych komórek, aktualizuj¹ca tablicê InfluenceList[]. Nastêpnie odnajduje wartoœæ maksymaln¹ MaxInfluenceValue i porównuj¹c j¹ z wp³ywem typu macierzystego uzyskuje InfluenceDifference. Czyœci i uzupe³nia liste MaxInfluenceType.
+	- public Area(int type) - konstruktor podstawowy tworzÄ…cy obiekt podanego typu.
+	- public Area(Area area) - konstruktor kopiujÄ…cy.
+	- public Area GetCloned() - metoda zwracajÄ…ca klon danego obiektu.
+	- public void CheckInfuence(World world, LinkedList<int> potentialList) - metoda sprawdzajÄ…ca wpÅ‚yw sÄ…siadujÄ…cych komÃ³rek, aktualizujÄ…ca tablicÄ™ InfluenceList[]. NastÄ™pnie odnajduje wartoÅ›Ä‡ maksymalnÄ… MaxInfluenceValue i porÃ³wnujÄ…c jÄ… z wpÅ‚ywem typu macierzystego uzyskuje InfluenceDifference. CzyÅ›ci i uzupeÅ‚nia liste MaxInfluenceType.
 	- public void AddInfluence(int type) - metoda inkrementujaca komorke w tablicy Influence[].
-	- public void Evolve(Random generator) - metoda wywo³uj¹ca zmianê typu danego obiektu i przemiane w typ odpowiadaj¹cy losowemu elementowi z tablicy MaxInfluenceType.
+	- public void Evolve(Random generator) - metoda wywoÅ‚ujÄ…ca zmianÄ™ typu danego obiektu i przemiane w typ odpowiadajÄ…cy losowemu elementowi z tablicy MaxInfluenceType.
 	- public Area(SerializationInfo info, StreamingContext context) - konstruktor wykorzystywany przy deserializacji - wczytaniu gry z pliku binarnego. Odczytuje z pliku poszczegolne wartosci danego obiektu i na ich podstawie tworzy nowy obiekt Area.
-	- public void GetObjectData(SerializationInfo info, StreamingContext context) - metoda wykorzystywana przy serializacji - zapisu gry do pliku binarnego. Analogiczne dzia³anie do kostruktora powy¿ej.
+	- public void GetObjectData(SerializationInfo info, StreamingContext context) - metoda wykorzystywana przy serializacji - zapisu gry do pliku binarnego. Analogiczne dziaÅ‚anie do kostruktora powyÅ¼ej.
 
 
 
-Klasa Organism - klasa bazowa wszystkich organizmow znajdujacych sie w grze. Dziedzicza po niej wszystkie zwierzeta Animal i Plant. Okreœla ona podstawowe cechy i metody abstrakcyjne organizmow w grze. Implementuje tez kilka podstawowych metod wirtualnych.
-	- public int Strength - okreœla si³e organizmu, podstawowy czynnik wp³ywaj¹cy na rozstrzyganie walk miêdzy organizmami ró¿nego typu
-	- public int StrengthModifier - tymczasowy modyfikator si³y zale¿ny od terenu na którym znajduje siê dany organizm. Domyœlnie równy 0. Podczas walki dodawany jest do si³y organizmu Strength.
-	- public int Location - okreœla lokalizacjê obiektu na planszy.
-	- public char Sign - okreœla znak jakim przestawiany jest obiekt na planszy.
-	- public bool Alive - okreœla czy organizm jest ¿ywy.
-	- public int DeathCounter - licznik którego wartoœæ roœnie gdy organizm przebywa na terenie dla siebie niebezpiecznym. Kiedy organizm zejdzie z pola niebezpiecznego DeathCounter wraca do wartoœci 0.
+Klasa Organism - klasa bazowa wszystkich organizmow znajdujacych sie w grze. Dziedzicza po niej wszystkie zwierzeta Animal i Plant. OkreÅ›la ona podstawowe cechy i metody abstrakcyjne organizmow w grze. Implementuje tez kilka podstawowych metod wirtualnych.
+
+	- public int Strength - okreÅ›la siÅ‚e organizmu, podstawowy czynnik wpÅ‚ywajÄ…cy na rozstrzyganie walk miÄ™dzy organizmami rÃ³Å¼nego typu
+	- public int StrengthModifier - tymczasowy modyfikator siÅ‚y zaleÅ¼ny od terenu na ktÃ³rym znajduje siÄ™ dany organizm. DomyÅ›lnie rÃ³wny 0. Podczas walki dodawany jest do siÅ‚y organizmu Strength.
+	- public int Location - okreÅ›la lokalizacjÄ™ obiektu na planszy.
+	- public char Sign - okreÅ›la znak jakim przestawiany jest obiekt na planszy.
+	- public bool Alive - okreÅ›la czy organizm jest Å¼ywy.
+	- public int DeathCounter - licznik ktÃ³rego wartoÅ›Ä‡ roÅ›nie gdy organizm przebywa na terenie dla siebie niebezpiecznym. Kiedy organizm zejdzie z pola niebezpiecznego DeathCounter wraca do wartoÅ›ci 0.
 
 	Metody i konstruktory:
-	- public abstract void Action(World world) - metoda wywo³ywana gdy dany obiekt ma wykonaæ swój ruch w danej turze. 
-	- public abstract void Spawn(World world) - metoda wywo³ywana gdy dany obiekt podejmuje próbê rozmno¿enia.
-	- public abstract void UpdateStrength(Area area) - metoda aktualizuj¹ca StrengthModifier danego obiektu.
-	- public abstract Organism GetCloned() - metoda zwracaj¹ca obiekt bêd¹cy dok³adn¹ kopi¹ obiektu. Jest nadpisywana w ka¿dej klasie i zawsze polega jedynie na zwróceniu obiektu danej klasy za pomoc¹ konstrkura kopiuj¹cego.
-	- public virtual bool Collision(World world, Organism attackingOrganism) - metoda wirtualna wywo³ywana kiedy organizm zostanie zaatakowany. Zwraca false je¿eli organizm atakuj¹cy jest s³abszy (ma ni¿sz¹ si³ê) od atakowanego. Zwraca true je¿eli organizm atakuj¹cy jest silniejszy, jednoczeœnie zmienia wartoœæ this.alive na false.
-	- public virtual void UpdateDeathCounter(Area area) - metoda wirtualna aktualizuj¹ca DeathCounter. Je¿eli dany organizm znajduje siê na polu gdzie Area.type = 1, to DeathCounter roœnie, je¿eli nie, to spada do 0.
+	- public abstract void Action(World world) - metoda wywoÅ‚ywana gdy dany obiekt ma wykonaÄ‡ swÃ³j ruch w danej turze. 
+	- public abstract void Spawn(World world) - metoda wywoÅ‚ywana gdy dany obiekt podejmuje prÃ³bÄ™ rozmnoÅ¼enia.
+	- public abstract void UpdateStrength(Area area) - metoda aktualizujÄ…ca StrengthModifier danego obiektu.
+	- public abstract Organism GetCloned() - metoda zwracajÄ…ca obiekt bÄ™dÄ…cy dokÅ‚adnÄ… kopiÄ… obiektu. Jest nadpisywana w kaÅ¼dej klasie i zawsze polega jedynie na zwrÃ³ceniu obiektu danej klasy za pomocÄ… konstrkura kopiujÄ…cego.
+	- public virtual bool Collision(World world, Organism attackingOrganism) - metoda wirtualna wywoÅ‚ywana kiedy organizm zostanie zaatakowany. Zwraca false jeÅ¼eli organizm atakujÄ…cy jest sÅ‚abszy (ma niÅ¼szÄ… siÅ‚Ä™) od atakowanego. Zwraca true jeÅ¼eli organizm atakujÄ…cy jest silniejszy, jednoczeÅ›nie zmienia wartoÅ›Ä‡ this.alive na false.
+	- public virtual void UpdateDeathCounter(Area area) - metoda wirtualna aktualizujÄ…ca DeathCounter. JeÅ¼eli dany organizm znajduje siÄ™ na polu gdzie Area.type = 1, to DeathCounter roÅ›nie, jeÅ¼eli nie, to spada do 0.
 	- public Organism(SerializationInfo info, StreamingContext context) - konstruktor wykorzystywany przy deserializacji - wczytaniu gry z pliku binarnego. Odczytuje z pliku poszczegolne wartosci danego obiektu i na ich podstawie tworzy nowy obiekt Organism.
-	- public virtual void GetObjectData(SerializationInfo info, StreamingContext context) - metoda wykorzystywana przy serializacji - zapisu gry do pliku binarnego. Analogiczne dzia³anie do kostruktora powy¿ej.
+	- public virtual void GetObjectData(SerializationInfo info, StreamingContext context) - metoda wykorzystywana przy serializacji - zapisu gry do pliku binarnego. Analogiczne dziaÅ‚anie do kostruktora powyÅ¼ej.
 
 
 
-Klasa Plant - klasa bazowa dla wszystkich roœlin, dziedzicz¹ca po Organism. Wszystkie klasy dziedzicz¹ce po Plant maj¹ inicjatywê. Nadpisuje jedynie metodê kolizji.
-        - override public void Action(World world) - ka¿da klasa dziedzicz¹ca po Plant w swojej turze wykonuje jedynie próbe rozmno¿enia Spawn().
-	- override public bool Collision(World world, Organism attackingOrganism) - metoda kolizji dla wiêkszoœci roœlin, zawsze zwraca true, a obiekt zaatakowany staje siê martwy.
+Klasa Plant - klasa bazowa dla wszystkich roÅ›lin, dziedziczÄ…ca po Organism. Wszystkie klasy dziedziczÄ…ce po Plant majÄ… inicjatywÄ™. Nadpisuje jedynie metodÄ™ kolizji.
+
+	- override public void Action(World world) - kaÅ¼da klasa dziedziczÄ…ca po Plant w swojej turze wykonuje jedynie prÃ³be rozmnoÅ¼enia Spawn().
+	- override public bool Collision(World world, Organism attackingOrganism) - metoda kolizji dla wiÄ™kszoÅ›ci roÅ›lin, zawsze zwraca true, a obiekt zaatakowany staje siÄ™ martwy.
 
 
 
-Klasa Grass - klasa roœliny dziedzicz¹ca po Plant. Posiada si³ê 0 i znak 'G'. Trawa nie posiada wielu specjajnych w³aœciwoœci. Nadpisujê metodê Spawn(), dodatkowo nadpisuje jedynie metodê UpdateDeathCounter.
-	- override public void Spawn(World world) - metoda spawn wywo³ywana jest w celu podjêcia próby rozprzestrzenienia siê danego gatunku roœliny. Roœliny maj¹ 50% szans na podjêcie próby rozmno¿enia. Je¿eli próba zakoñczy siê sukcesem to generowana jest lokalizacja nowej roœliny za pomoc¹ metody GenerateNearbyEmptyLocation() i wstawiana jest w jej miejsce nowa roœlina. Je¿eli nie ma wolnych lokalizacji wokó³ roœliny, to próba koñczy siê niepowodzeniem.
-	- override public void UpdateDeathCounter(Area area) - metoda aktualizuj¹ca DeathCounter danego obiektu. W przypadku trawy DeathCounter roœnie tak¿e gdy area.Type == 3, czyli gdy trawa znajduje siê w lesie.
+Klasa Grass - klasa roÅ›liny dziedziczÄ…ca po Plant. Posiada siÅ‚Ä™ 0 i znak 'G'. Trawa nie posiada wielu specjajnych wÅ‚aÅ›ciwoÅ›ci. NadpisujÄ™ metodÄ™ Spawn(), dodatkowo nadpisuje jedynie metodÄ™ UpdateDeathCounter.
+
+	- override public void Spawn(World world) - metoda spawn wywoÅ‚ywana jest w celu podjÄ™cia prÃ³by rozprzestrzenienia siÄ™ danego gatunku roÅ›liny. RoÅ›liny majÄ… 50% szans na podjÄ™cie prÃ³by rozmnoÅ¼enia. JeÅ¼eli prÃ³ba zakoÅ„czy siÄ™ sukcesem to generowana jest lokalizacja nowej roÅ›liny za pomocÄ… metody GenerateNearbyEmptyLocation() i wstawiana jest w jej miejsce nowa roÅ›lina. JeÅ¼eli nie ma wolnych lokalizacji wokÃ³Å‚ roÅ›liny, to prÃ³ba koÅ„czy siÄ™ niepowodzeniem.
+	- override public void UpdateDeathCounter(Area area) - metoda aktualizujÄ…ca DeathCounter danego obiektu. W przypadku trawy DeathCounter roÅ›nie takÅ¼e gdy area.Type == 3, czyli gdy trawa znajduje siÄ™ w lesie.
 
 
 
-Klasa Guarana - klasa roœliny dziedzicz¹ca po Plant. Posiada si³ê 0 i znak 'U'. Specjaln¹ w³aœciwoœci¹ Guarany jest to ¿e zwiêksza si³ê obiektu, który j¹ zaatakuje o 3 lub o 2 je¿eli Guarana znajduje siê na Area.type==0. W zwi¹zku z tym Guarana nadpisuje metodê Collision i metodê Spawn(). 
-	- override public void Spawn(World world) - metoda spawn wywo³ywana jest w celu podjêcia próby rozprzestrzenienia siê danego gatunku roœliny. Roœliny maj¹ 50% szans na podjêcie próby rozmno¿enia. Je¿eli próba zakoñczy siê sukcesem to generowana jest lokalizacja nowej roœliny za pomoc¹ metody GenerateNearbyEmptyLocation() i wstawiana jest w jej miejsce nowa roœlina. Je¿eli nie ma wolnych lokalizacji wokó³ roœliny, to próba koñczy siê niepowodzeniem.
-	- override public bool Collision(World world, Organism attackingOrganism) - metoda kolizji, zwraca true a obiekt zaatakowany staje siê martwy. Dodatkowo zwiêksza si³ê organizmu atakuj¹cego o 3 lub o 2 je¿eli dana Guarana znajduje siê na Area.type==0 (na polanie).
+Klasa Guarana - klasa roÅ›liny dziedziczÄ…ca po Plant. Posiada siÅ‚Ä™ 0 i znak 'U'. SpecjalnÄ… wÅ‚aÅ›ciwoÅ›ciÄ… Guarany jest to Å¼e zwiÄ™ksza siÅ‚Ä™ obiektu, ktÃ³ry jÄ… zaatakuje o 3 lub o 2 jeÅ¼eli Guarana znajduje siÄ™ na Area.type==0. W zwiÄ…zku z tym Guarana nadpisuje metodÄ™ Collision i metodÄ™ Spawn(). 
+
+	- override public void Spawn(World world) - metoda spawn wywoÅ‚ywana jest w celu podjÄ™cia prÃ³by rozprzestrzenienia siÄ™ danego gatunku roÅ›liny. RoÅ›liny majÄ… 50% szans na podjÄ™cie prÃ³by rozmnoÅ¼enia. JeÅ¼eli prÃ³ba zakoÅ„czy siÄ™ sukcesem to generowana jest lokalizacja nowej roÅ›liny za pomocÄ… metody GenerateNearbyEmptyLocation() i wstawiana jest w jej miejsce nowa roÅ›lina. JeÅ¼eli nie ma wolnych lokalizacji wokÃ³Å‚ roÅ›liny, to prÃ³ba koÅ„czy siÄ™ niepowodzeniem.
+	- override public bool Collision(World world, Organism attackingOrganism) - metoda kolizji, zwraca true a obiekt zaatakowany staje siÄ™ martwy. Dodatkowo zwiÄ™ksza siÅ‚Ä™ organizmu atakujÄ…cego o 3 lub o 2 jeÅ¼eli dana Guarana znajduje siÄ™ na Area.type==0 (na polanie).
 
 
 
-Klasa Thorn - klasa roœliny dziedzicz¹ca po Plant. Posiada si³ê 2 i znak 'T'. Specjaln¹ w³aœciwoœci¹ Thorn jest to, ¿e posiada si³ê 2, oraz w metodzie Collision je¿eli zostanie zjedzony przez obiekt klasy ThornEater, to zwiêksza jego si³e o 2. W zwi¹zku z tym Thorn nadpisuje metodê Collision i metodê Spawn(). 
-	- override public void Spawn(World world) - metoda spawn wywo³ywana jest w celu podjêcia próby rozprzestrzenienia siê danego gatunku roœliny. Roœliny maj¹ 50% szans na podjêcie próby rozmno¿enia. Je¿eli próba zakoñczy siê sukcesem to generowana jest lokalizacja nowej roœliny za pomoc¹ metody GenerateNearbyEmptyLocation() i wstawiana jest w jej miejsce nowa roœlina. Je¿eli nie ma wolnych lokalizacji wokó³ roœliny, to próba koñczy siê niepowodzeniem.
-	- override public bool Collision(World world, Organism attackingOrganism) - metoda kolizji. Zwraca false je¿eli organizm atakuj¹cy jest s³abszy (ma ni¿sz¹ si³ê) od atakowanego. Zwraca true je¿eli organizm atakuj¹cy jest silniejszy, jednoczeœnie zmienia wartoœæ this.alive na false. Dodatkowo je¿eli organizmem który zatakowa³ jest ThornEater zwiêksza jego si³ê o 2.
+Klasa Thorn - klasa roÅ›liny dziedziczÄ…ca po Plant. Posiada siÅ‚Ä™ 2 i znak 'T'. SpecjalnÄ… wÅ‚aÅ›ciwoÅ›ciÄ… Thorn jest to, Å¼e posiada siÅ‚Ä™ 2, oraz w metodzie Collision jeÅ¼eli zostanie zjedzony przez obiekt klasy ThornEater, to zwiÄ™ksza jego siÅ‚e o 2. W zwiÄ…zku z tym Thorn nadpisuje metodÄ™ Collision i metodÄ™ Spawn(). 
+
+	- override public void Spawn(World world) - metoda spawn wywoÅ‚ywana jest w celu podjÄ™cia prÃ³by rozprzestrzenienia siÄ™ danego gatunku roÅ›liny. RoÅ›liny majÄ… 50% szans na podjÄ™cie prÃ³by rozmnoÅ¼enia. JeÅ¼eli prÃ³ba zakoÅ„czy siÄ™ sukcesem to generowana jest lokalizacja nowej roÅ›liny za pomocÄ… metody GenerateNearbyEmptyLocation() i wstawiana jest w jej miejsce nowa roÅ›lina. JeÅ¼eli nie ma wolnych lokalizacji wokÃ³Å‚ roÅ›liny, to prÃ³ba koÅ„czy siÄ™ niepowodzeniem.
+	- override public bool Collision(World world, Organism attackingOrganism) - metoda kolizji. Zwraca false jeÅ¼eli organizm atakujÄ…cy jest sÅ‚abszy (ma niÅ¼szÄ… siÅ‚Ä™) od atakowanego. Zwraca true jeÅ¼eli organizm atakujÄ…cy jest silniejszy, jednoczeÅ›nie zmienia wartoÅ›Ä‡ this.alive na false. Dodatkowo jeÅ¼eli organizmem ktÃ³ry zatakowaÅ‚ jest ThornEater zwiÄ™ksza jego siÅ‚Ä™ o 2.
 
 
 
-Klasa Animal - klasa bazowa dla wszystkich zwierz¹t, dziedzicz¹ca po Organism. Wszystkie klasy dziedzicz¹ce po Animal maj¹ tak¹ sam¹ metodê Action(). Nadpisuje równie¿ metodê UpdateStrength().
-        - override public void Action(World world) - metoda wywo³ywana gdy dany obiekt ma wykonaæ swój ruch w danej turze. W przypadku wszystkich zwierz¹t wygl¹da tak samo. Dane zwierzê stara siê w swojej kolejce przejœæ na s¹siaduj¹ce pole generowane przez GenerateNearbyLocation(). Je¿eli wygenerowane pole jest puste to zwierzê na nie przechodzi. Je¿eli na wygenerowanym polu znajduje siê obiekt tej samej klasy to wywo³ywana jest metoda Spawn(). Je¿eli znajduje siê obiekt innej klasy, to rozpoczyna siê walka miêdzy tymi obiektami poprzez wywo³anie metody Collision obiektu zatakowanego. Je¿eli metoda Collision zwróci true, to organizm atakuj¹cy wygra³ i przesuwa siê na wygenerowane wczeœniej pole. Je¿eli zwróci false, to przegra³, w efekcie ginie i jest usuwany z planszy.
-	- override public void UpdateStrength(Area area) - metoda aktualizuj¹ca StrengthModifier danego obiektu. W przypadku wiêkszoœci zwierz¹t StrengthModifier zmniejsza modyfikator si³y na polu Area.type == 1 (na pustyni).
+Klasa Animal - klasa bazowa dla wszystkich zwierzÄ…t, dziedziczÄ…ca po Organism. Wszystkie klasy dziedziczÄ…ce po Animal majÄ… takÄ… samÄ… metodÄ™ Action(). Nadpisuje rÃ³wnieÅ¼ metodÄ™ UpdateStrength().
+
+        - override public void Action(World world) - metoda wywoÅ‚ywana gdy dany obiekt ma wykonaÄ‡ swÃ³j ruch w danej turze. W przypadku wszystkich zwierzÄ…t wyglÄ…da tak samo. Dane zwierzÄ™ stara siÄ™ w swojej kolejce przejÅ›Ä‡ na sÄ…siadujÄ…ce pole generowane przez GenerateNearbyLocation(). JeÅ¼eli wygenerowane pole jest puste to zwierzÄ™ na nie przechodzi. JeÅ¼eli na wygenerowanym polu znajduje siÄ™ obiekt tej samej klasy to wywoÅ‚ywana jest metoda Spawn(). JeÅ¼eli znajduje siÄ™ obiekt innej klasy, to rozpoczyna siÄ™ walka miÄ™dzy tymi obiektami poprzez wywoÅ‚anie metody Collision obiektu zatakowanego. JeÅ¼eli metoda Collision zwrÃ³ci true, to organizm atakujÄ…cy wygraÅ‚ i przesuwa siÄ™ na wygenerowane wczeÅ›niej pole. JeÅ¼eli zwrÃ³ci false, to przegraÅ‚, w efekcie ginie i jest usuwany z planszy.
+	- override public void UpdateStrength(Area area) - metoda aktualizujÄ…ca StrengthModifier danego obiektu. W przypadku wiÄ™kszoÅ›ci zwierzÄ…t StrengthModifier zmniejsza modyfikator siÅ‚y na polu Area.type == 1 (na pustyni).
 
 
 
-Klasa Mouse - klasa zwierzêcia dziedzicz¹ca po Animal. Posiada inicjatywê 6, si³ê 1 i znak 'M'. Specjaln¹ w³aœciwoœci¹ myszy jest to, ¿e gdy znajduje siê na Area.type=0 (na polanie), to ma podwójne szanse na potomstwo. Dodatkowo mysz w metodzie Collision potrafi uciekaæ jeœli przegra walkê, chyba ¿e atakuje j¹ Snake, wtedy nie jest w stanie uciec. 
-	- override public bool Collision(World world, Organism attackingOrganism) - metoda Collision ró¿ni¹ca siê do standardowej tym, ¿e gdy zaatakowana mysz przegra walkê, to stara siê uciec na losowe puste wolne miejsce. Je¿eli nie ma akurat ¿adnego wolnego pola lub gdy organizmem atakuj¹cym jest Snake, to myszy nie udaje siê uciec i ginie.
-	- override public void Spawn(World world) - metoda wywo³ywana gdy zwierzê danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku myszy, gdy mysz znajduje siê na Area.type=0, to próba jest podejmowana dwukrotnie. 
+Klasa Mouse - klasa zwierzÄ™cia dziedziczÄ…ca po Animal. Posiada inicjatywÄ™ 6, siÅ‚Ä™ 1 i znak 'M'. SpecjalnÄ… wÅ‚aÅ›ciwoÅ›ciÄ… myszy jest to, Å¼e gdy znajduje siÄ™ na Area.type=0 (na polanie), to ma podwÃ³jne szanse na potomstwo. Dodatkowo mysz w metodzie Collision potrafi uciekaÄ‡ jeÅ›li przegra walkÄ™, chyba Å¼e atakuje jÄ… Snake, wtedy nie jest w stanie uciec. 
+
+	- override public bool Collision(World world, Organism attackingOrganism) - metoda Collision rÃ³Å¼niÄ…ca siÄ™ do standardowej tym, Å¼e gdy zaatakowana mysz przegra walkÄ™, to stara siÄ™ uciec na losowe puste wolne miejsce. JeÅ¼eli nie ma akurat Å¼adnego wolnego pola lub gdy organizmem atakujÄ…cym jest Snake, to myszy nie udaje siÄ™ uciec i ginie.
+	- override public void Spawn(World world) - metoda wywoÅ‚ywana gdy zwierzÄ™ danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku myszy, gdy mysz znajduje siÄ™ na Area.type=0, to prÃ³ba jest podejmowana dwukrotnie. 
 
 
 
-Klasa Sheep - klasa zwierzêcia dziedzicz¹ca po Animal. Posiada inicjatywê 4, si³ê 4 i znak 'O'. Specjaln¹ w³aœciwoœci¹ owcy jest to, ¿e metoda UpdateStrength zmniejsza modyfikator si³y zarówna na terenie Area.type == 1 jak i Area.type == 3 (na pustyni oraz w lesie)
-	- override public void Spawn(World world) - metoda wywo³ywana gdy zwierzê danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku Owcy nie ma w niej nic specjalnego.
-	- override public void UpdateStrength(Area area) - metoda aktualizuj¹ca StrengthModifier danego obiektu. W przypadku owcy StrengthModifier zmniejsza modyfikator si³y na polu Area.type == 1 oraz Area.type == 3 (na pustyni oraz w lesie).
+Klasa Sheep - klasa zwierzÄ™cia dziedziczÄ…ca po Animal. Posiada inicjatywÄ™ 4, siÅ‚Ä™ 4 i znak 'O'. SpecjalnÄ… wÅ‚aÅ›ciwoÅ›ciÄ… owcy jest to, Å¼e metoda UpdateStrength zmniejsza modyfikator siÅ‚y zarÃ³wna na terenie Area.type == 1 jak i Area.type == 3 (na pustyni oraz w lesie)
+
+	- override public void Spawn(World world) - metoda wywoÅ‚ywana gdy zwierzÄ™ danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku Owcy nie ma w niej nic specjalnego.
+	- override public void UpdateStrength(Area area) - metoda aktualizujÄ…ca StrengthModifier danego obiektu. W przypadku owcy StrengthModifier zmniejsza modyfikator siÅ‚y na polu Area.type == 1 oraz Area.type == 3 (na pustyni oraz w lesie).
 
 
 
-Klasa Snake - klasa zwierzêcia dziedzicz¹ca po Animal. Posiada inicjatywê 3, si³ê 2 i znak 'S'. Specjaln¹ w³aœciwoœci¹ wê¿y jest to, ¿e kiedy zostanie on zabity podczas metody Collision, to zatruwa on prganizm atakuj¹cy, w efekcie równie¿ organizm atakuj¹cy ginie. 
-	- override public void Spawn(World world) - metoda wywo³ywana gdy zwierzê danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku wê¿y nie ma w niej nic specjalnego.
-	- override public bool Collision(World world, Organism attackingOrganism) - metoda Collision ró¿ni¹ca siê do standardowej tym, ¿e gdy zaatakowany w¹¿ przegra walkê, to zatruwa organizm go atakuj¹cy. W efekcie atakuj¹cy równie¿ ginie, metoda zawsze zwraca false.
+Klasa Snake - klasa zwierzÄ™cia dziedziczÄ…ca po Animal. Posiada inicjatywÄ™ 3, siÅ‚Ä™ 2 i znak 'S'. SpecjalnÄ… wÅ‚aÅ›ciwoÅ›ciÄ… wÄ™Å¼y jest to, Å¼e kiedy zostanie on zabity podczas metody Collision, to zatruwa on prganizm atakujÄ…cy, w efekcie rÃ³wnieÅ¼ organizm atakujÄ…cy ginie. 
+
+	- override public void Spawn(World world) - metoda wywoÅ‚ywana gdy zwierzÄ™ danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku wÄ™Å¼y nie ma w niej nic specjalnego.
+	- override public bool Collision(World world, Organism attackingOrganism) - metoda Collision rÃ³Å¼niÄ…ca siÄ™ do standardowej tym, Å¼e gdy zaatakowany wÄ…Å¼ przegra walkÄ™, to zatruwa organizm go atakujÄ…cy. W efekcie atakujÄ…cy rÃ³wnieÅ¼ ginie, metoda zawsze zwraca false.
 
 
 
-Klasa ThornEater - klasa zwierzêcia dziedzicz¹ca po Animal. Posiada inicjatywê 4, si³ê 4 i znak 'E'. Specjaln¹ w³aœciwoœci¹ cierniojada jest to, ¿e gdy znajduje siê na Area.type=3 (w lesie), to ma szanse na podwójne potomstwo. Dodatkowo gdy ThornEater zje Thorn, to zyskuje +2 si³y (opis w klasie Thorn).
-	- override public void Spawn(World world) - metoda wywo³ywana gdy zwierzê danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku cierno¿era, gdy ciernio¿er znajduje siê na Area.type=3, to próba jest podejmowana dwukrotnie.
+Klasa ThornEater - klasa zwierzÄ™cia dziedziczÄ…ca po Animal. Posiada inicjatywÄ™ 4, siÅ‚Ä™ 4 i znak 'E'. SpecjalnÄ… wÅ‚aÅ›ciwoÅ›ciÄ… cierniojada jest to, Å¼e gdy znajduje siÄ™ na Area.type=3 (w lesie), to ma szanse na podwÃ³jne potomstwo. Dodatkowo gdy ThornEater zje Thorn, to zyskuje +2 siÅ‚y (opis w klasie Thorn).
+
+	- override public void Spawn(World world) - metoda wywoÅ‚ywana gdy zwierzÄ™ danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku ciernoÅ¼era, gdy ciernioÅ¼er znajduje siÄ™ na Area.type=3, to prÃ³ba jest podejmowana dwukrotnie.
 
 
 
-Klasa Wolf - klasa zwierzêcia dziedzicz¹ca po Animal. Posiada inicjatywê 5, si³ê 6 i znak 'W'. Wilk nie posiada specjalnych w³aœciwoœci.
-	- override public void Spawn(World world) - metoda wywo³ywana gdy zwierzê danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku wilków nie ma w niej nic specjalnego.
+Klasa Wolf - klasa zwierzÄ™cia dziedziczÄ…ca po Animal. Posiada inicjatywÄ™ 5, siÅ‚Ä™ 6 i znak 'W'. Wilk nie posiada specjalnych wÅ‚aÅ›ciwoÅ›ci.
+
+	- override public void Spawn(World world) - metoda wywoÅ‚ywana gdy zwierzÄ™ danego typu natrafi podczas swojej tury w metodzie Action() na organizm tego samego typu. W przypadku wilkÃ³w nie ma w niej nic specjalnego.
 
 
 
 
 
-Przybli¿ony podzia³ zadañ:
+PrzybliÅ¼ony podziaÅ‚ zadaÅ„:
 
-Jacek Sudak: klasa World, Mo¿liwoœæ odtworzenia stanu gry w zakresie ostatnich 5 tur.
+Jacek Sudak: Klasa World, MoÅ¼liwoÅ›Ä‡ odtworzenia stanu gry w zakresie ostatnich 5 tur.
 
-Pawe³ Lipiñski: Klasa Main i WPF, klasa Organism, Animal, Plant i ich pochodne.
+PaweÅ‚ LipiÅ„ski: Klasa Main i WPF, klasa Organism, Animal, Plant i ich pochodne.
 
-Miko³aj Król: Klasa Area, mo¿liwoœæ zapisu do pliku i wczytania z pliku stanu gry. 
+MikoÅ‚aj KrÃ³l: Klasa Area, moÅ¼liwoÅ›Ä‡ zapisu do pliku i wczytania z pliku stanu gry. 
 
