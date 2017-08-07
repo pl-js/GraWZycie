@@ -4,6 +4,8 @@ Tytuł projektu: Gra w życie
 
 Autorzy: Mikołaj Król, Paweł Lipiński, Jacek Sudak
 
+Link do filmu: https://youtu.be/dTGDsHqat3Y
+
 
 
 Temat:
