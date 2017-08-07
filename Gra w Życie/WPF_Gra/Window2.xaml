@@ -1,0 +1,82 @@
+﻿<Window x:Class="WPF_Gra.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Gra"
+        mc:Ignorable="d"
+        Title="Legend" Height="353.907" Width="300">
+    <Grid Background="Silver" Height="324" VerticalAlignment="Top" Margin="0,0,2,-1" RenderTransformOrigin="0.503,0.611">
+        <StackPanel HorizontalAlignment="Center" Height="307" Margin="14,0,9,17" VerticalAlignment="Bottom" Width="267">
+            <Label Content="Areas" HorizontalContentAlignment="Center" Width="272" Height="34" Margin="0,0,-5,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="25">
+                <Label x:Name="label" HorizontalContentAlignment="Center" Width="60" Content="Glade"/>
+                <Rectangle Margin="5,0,10,0"  Fill="LawnGreen" Width="50" Height="25" VerticalAlignment="Top">
+                    <Rectangle.ToolTip>
+                        <TextBlock>
+                            Mouse has 50% of chance to have 2 children.
+                            <LineBreak />
+                            Guarana gives only 2 points of strength.
+                        </TextBlock>
+                    </Rectangle.ToolTip>
+                </Rectangle>
+                <Label x:Name="label1" HorizontalContentAlignment="Center" Width="60"  Content="Swamp"/>
+                <Rectangle Fill="Olive" Margin="5,0,10,0" Width="50">
+                    <Rectangle.ToolTip>
+                        <TextBlock>
+                            50% of chances that animal will not move.
+                            <LineBreak />
+                            Same chances that spawn will fail.
+                        </TextBlock>
+                    </Rectangle.ToolTip>
+                </Rectangle>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,15,0,0" HorizontalAlignment="Center" Height="25">
+                <Label x:Name="label2" HorizontalContentAlignment="Center" Width="60"  Content="Dessert"/>
+                <Rectangle Margin="5,0,10,0"  Fill="Gold" Width="50">
+                    <Rectangle.ToolTip>
+                        <TextBlock>
+                            All animals except snake loose 2 points of strength.
+                            <LineBreak />
+                            Animals on the desert die after 5 turns
+                        </TextBlock>
+                    </Rectangle.ToolTip>
+                </Rectangle>
+                <Label x:Name="label3" HorizontalContentAlignment="Center" Width="60"  Content="Forrest"/>
+                <Rectangle Fill="SeaGreen" Margin="5,0,10,0" Width="50">
+                    <Rectangle.ToolTip>
+                        <TextBlock>
+                            Sheep loses 2 points of strength.
+                            <LineBreak />
+                            ThornEater has 50% of chance to have 2 children.
+                            <LineBreak />
+                            Thorn is 50% more likely to spawn a child.
+                            <LineBreak />
+                            Grass lasts 4 turns in the forrest.
+                        </TextBlock>
+                    </Rectangle.ToolTip>
+                </Rectangle>
+            </StackPanel>
+            <Label HorizontalContentAlignment="Center" Margin="0,15,0,0">Organisms (Nominal Strength, Initiative)</Label>
+            <StackPanel Orientation="Horizontal" Height="187">
+                <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="0,10" Width="133">
+                    <Label HorizontalAlignment="Center" DockPanel.Dock="Top" Content="Animals"/>
+                    <Label DockPanel.Dock="Top" Content="W - Wolf (9,5)" ToolTip="No special features."/>
+                    <Label DockPanel.Dock="Top" Content="O - Sheep (4,4)" ToolTip="No special features."/>
+                    <Label DockPanel.Dock="Top" Content="S - Snake (2,3)" ToolTip="If a Snake is attacked and loses the fight it dies but it also kills its attacker."/>
+                    <Label DockPanel.Dock="Top" Content="E - ThornEater (4,4)" ToolTip="ThornEater has a 50% chance to Spawn 2 new ThornEaters when in the Forest. Eats thorns."/>
+                    <Label DockPanel.Dock="Top" Content="M - Mouse (1,6)" ToolTip="Mouse tries to escape then it loses the fight. It can't escape form Snake. It escapes to nearbyEmptyLocation but if there is no place to escape it dies."/>
+                </DockPanel>
+                <DockPanel HorizontalAlignment="Right" LastChildFill="False" Width="134" Margin="0,10,0,27">
+                    <Label DockPanel.Dock="Top" HorizontalContentAlignment="Center" Content="Plants" Height="24"/>
+                    <Label DockPanel.Dock="Top" Content="G - Grass (0,1)" ToolTip="No special features."/>
+                    <Label DockPanel.Dock="Top" Content="U - Guarana (0,1)" ToolTip="It increases strength of an animal that ate it. Basically by 3 points."/>
+                    <Label DockPanel.Dock="Top" Content="T - Thorn (2,1)" ToolTip="When a ThornEater attacks Thorn and eats it, it gains 2 Strength."/>
+                </DockPanel>
+            </StackPanel>
+
+
+        </StackPanel>
+
+    </Grid>
+</Window>

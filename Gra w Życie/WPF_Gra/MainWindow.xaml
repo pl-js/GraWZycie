@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_Gra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Game of Life"  HorizontalAlignment="Center"  Height="556.448" Width="955"
+        ResizeMode="NoResize">
+    <Grid Margin="0,0,-6,0" Background="Silver">
+        <Grid HorizontalAlignment="Left" Name="vBoard" Height="497" Margin="422,10,0,0" VerticalAlignment="Top" Width="501" Background="White"/>
+        <Label Content="Logs" HorizontalAlignment="Left" Height="30" Margin="149,5,0,0" VerticalAlignment="Top" Width="124" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.49,-0.307"/>
+        <TextBox HorizontalAlignment="Left" Name="lBox" Height="324" TextWrapping="Wrap"  ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True" VerticalAlignment="Top" Width="397" Background="White" Margin="10,40,0,0"/>
+        <StackPanel HorizontalAlignment="Left" Height="151" Margin="10,369,0,0" VerticalAlignment="Top" Width="397">
+            <Button Content="Next Turn" IsDefault="True" Click="NowaTura_Click" HorizontalAlignment="Left" Width="397"/>
+            <Button Content="Start/Stop Automatic Turns" Click="Button_Click_1" Name="automaticButton"/>
+            <Button Content="Previous Turn" Click="Button_Click"/>
+            <Button Content="New Game" Click="NowaGra_Click"/>
+            <Button Content="Save Game" Click="Button_Click_2"/>
+            <Button Content="Load Game" Click="Button_Click_3"/>
+            <Button x:Name="Legend" Content="Legend" Click="Legend_Click"/>
+
+        </StackPanel>
+        
+
+    </Grid>
+</Window>

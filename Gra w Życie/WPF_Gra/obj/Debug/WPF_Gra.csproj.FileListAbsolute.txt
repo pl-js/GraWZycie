@@ -1,0 +1,148 @@
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\bin\Debug\WPF_Gra.exe
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\bin\Debug\WPF_Gra.pdb
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\MainWindow.baml
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\MainWindow.g.cs
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\App.g.cs
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\WPF_Gra.exe
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\WPF_Gra.pdb
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\Window1.baml
+d:\pliki - paweł\dokumenty\visual studio 2013\Projects\WPF_Gra\WPF_Gra\obj\Debug\Window1.g.cs
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\bin\Debug\WPF_Gra.exe
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\bin\Debug\WPF_Gra.pdb
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\MainWindow.baml
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window1.baml
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\MainWindow.g.cs
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window1.g.cs
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\App.g.cs
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.exe
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.pdb
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window2.g.cs
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.lref
+D:\Pliki\Pulpit\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window2.baml
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.pdb
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\MainWindow.baml
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window1.baml
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\MainWindow.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window1.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window2.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\App.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.lref
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\bin\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\bin\Debug\WPF_Gra.pdb
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\Window2.baml
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF_Gra_backup - bez zapisu i area\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+D:\Pliki - Paweł\Pulpit\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+D:\Pliki - Paweł\Pulpit\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.pdb
+D:\Pliki - Paweł\Pulpit\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.pdb
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\bin\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\bin\Debug\WPF_Gra.pdb
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\MainWindow.baml
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window1.baml
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\MainWindow.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window1.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window2.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\App.g.cs
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.lref
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window2.baml
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+D:\Pliki - Paweł\Pulpit\Wersja bez zapisu, ale prawie gotowe\WPF_Gra_backup - bez zapisu i area\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.pdb
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\bin\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\bin\Debug\WPF_Gra.pdb
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\MainWindow.baml
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window1.baml
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\MainWindow.g.cs
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window1.g.cs
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window2.g.cs
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\App.g.cs
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.lref
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\Window2.baml
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem2\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem2\WPF_Gra\obj\Debug\WPF_Gra.exe
+D:\Pliki - Paweł\Pulpit\WPF-prawie-gotowe-ale-coś-z-zapisem\WPF - prawie gotowe, ale coś z zapisem2\WPF_Gra\obj\Debug\WPF_Gra.pdb
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.exe
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.pdb
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.exe
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.pdb
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\MainWindow.baml
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window1.baml
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\MainWindow.g.cs
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window1.g.cs
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window2.g.cs
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\App.g.cs
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.lref
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window2.baml
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+D:\Pliki\Pulpit\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.exe
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.pdb
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.exe
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.pdb
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\MainWindow.baml
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window1.baml
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\MainWindow.g.cs
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window1.g.cs
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window2.g.cs
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\App.g.cs
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.lref
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window2.baml
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+C:\Users\Paweł\Dropbox\WPF-wersja-chyba-ostateczna1\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.exe.config
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.exe
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\bin\Debug\WPF_Gra.pdb
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.csprojResolveAssemblyReference.cache
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\MainWindow.baml
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window1.baml
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\MainWindow.g.cs
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window1.g.cs
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window2.g.cs
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\App.g.cs
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.cache
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra_MarkupCompile.lref
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\Window2.baml
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.g.resources
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.Properties.Resources.resources
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.csproj.GenerateResource.Cache
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.exe
+C:\Users\Jacek\Desktop\WPF-ostateczna wersja\WPF - wersja chyba ostateczna1\WPF_Gra\obj\Debug\WPF_Gra.pdb
